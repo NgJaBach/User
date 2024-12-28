@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+
+using namespace std;
+typedef long long int ll;
+#define pb push_back
+#define fi first
+#define se second
+#define gcd __gcd
+#define endl '\n'
+const int N=200050,M=1000000007;
+const ll INF=1e18+7;
+
+void solve(){
+    int n;
+    return;
+}
+
+int main(){
+    ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+//    freopen(".inp","r",stdin);
+//    freopen(".out","w",stdout);
+    int t=1;
+    while(t--){
+        solve();
+        cout<<endl;
+    }
+    return 0;
+}
+]]></content>
+	<tabTrigger>chicken</tabTrigger>
+	<!-- <scope>source.c++</scope> -->
+</snippet>

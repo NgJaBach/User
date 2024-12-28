@@ -1,0 +1,14 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"save_on_focus_lost": true,
+	"auto_complete": false,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"default_syntax": "C++",
+	"index_files": true,
+	"default_new_file_syntax": "source.c++",
+	"font_size": 11,
+}

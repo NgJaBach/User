@@ -1,0 +1,12 @@
+{
+	"installed_packages":
+	[
+		"Console Exec",
+		"Default File Type",
+		"Package Control",
+	],
+	"in_process_packages":
+	[
+	],
+	"bootstrapped": true,
+}

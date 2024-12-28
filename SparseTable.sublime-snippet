@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+struct SparseTable{
+    int n;
+    vector<vector<int>>table;
+    
+    int lg(const unsigned long long &i) { // log2_floor
+        return i ? __builtin_clzll(1) - __builtin_clzll(i) : -1;
+    }
+    
+    SparseTable(const vector<int>&arr){
+        n = (int)arr.size();
+
+        table.resize(lg(n) + 1, vector<int>(n));
+        for(int i = 0; i < n; ++i)
+            table[0][i] = arr[i];
+        for(int i = 1; i <= lg(n); ++i)
+            for(int j = 0; j + (1 << i) <= n; ++j)
+                table[i][j] = min(table[i - 1][j], table[i - 1][j + (1 << (i - 1))]);
+    }
+
+    int RMQ(const int &L, const int &R){ // 0-based indexing
+        int i = lg(R - L + 1);
+        return min(table[i][L], table[i][R - (1 << i) + 1]);
+    }
+};
+]]></content>
+	<tabTrigger>sparsetable</tabTrigger>
+	<!-- <scope>source.c++</scope> -->
+</snippet>
